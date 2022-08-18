@@ -37,3 +37,28 @@ MORSE_DICT = {
   '----.' => '9',
   '-----' => '0'
 }.freeze
+
+def decode_char(char, dict: MORSE_DICT)
+  dict[char] ? dict[char].upcase : ''
+end
+
+def decode_word(word)
+  result = ''
+
+  word.split(/ /).each do |letter|
+    result += decode_char(letter)
+  end
+  result
+end
+
+def decode(sentence)
+  result = ''
+  sentence.split(/   /).each do |word|
+    result += " #{decode_word(word)}"
+  end
+  result.strip
+end
+
+puts decode('..  .- -- -.- .. .--.')
+puts decode('-- -.--   -. .- -- .')
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
