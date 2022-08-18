@@ -59,6 +59,6 @@ def decode(sentence)
   result.strip
 end
 
-puts decode('..  .- -- -.- .. .--.')
+puts decode('..   .- --   -.- .. .--.')
 puts decode('-- -.--   -. .- -- .')
 puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
