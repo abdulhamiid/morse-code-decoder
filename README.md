@@ -10,7 +10,7 @@
 * [Author](#author)
 
 ## Morse Code Decoder
-> In this project, I practice setting up a Ruby on rails project.
+> This is a decryption coding challenge that decrypts a message written in MorseCode to it's English equivalent.
 
 ## Built With
 
